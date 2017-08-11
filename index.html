@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Jonathan Forrider</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+  
+  
+</head>
+
+<body>
+  <html>
+    <head>
+        <title>Banner Workflow 8.3.0.1 (wfmso) - jf221815</title>
+        <script type="text/javascript">
+          function getContextPath() {
+   return "/wfmso";
+}
+
+        </script>
+        <script type="text/javascript">
+var requestContextPathForCalendar = "/wfmso";
+</script>
+<script type="text/javascript" src="/wfmso/dojo/dojo.js"></script>
+<script type="text/javascript" src="/wfmso/js/jscalendar/calendar.js"></script>
+<script type="text/javascript" src="/wfmso/js/jscalendar/lang/calendar-en.js"></script>
+<script type="text/javascript" src="/wfmso/js/jscalendar/popupCalendar.js"></script>
+
+
+        
+
+<link rel="stylesheet" type="text/css" href="/wfmso/css/cp.css">
+<link rel="icon" type="image/ico" href="/wfmso/images/favicon.ico">
+<link rel="shortcut icon" type="image/ico" href="/wfmso/images/favicon.ico"><link rel="stylesheet" type="text/css" href="/wfmso/css/wfstyle.css">
+
+
+        
+
+<script type="text/Javascript">
+window.onload = function() {
+	//document.body.style["text-underline"] = 'none';
+  document.getElementById("fieldContainer_last_day_of_attendance").style.display = 'none';
+
+
+	document.getElementById("radioGroupItem_1_student_attendance").onclick = function(){
+    document.getElementById("fieldContainer_last_day_of_attendance").style.display = 'inline';
+  };
+
+  document.getElementById("radioGroupItem_2_student_attendance").onclick = function(){
+    document.getElementById("fieldContainer_last_day_of_attendance").style.display = 'none';
+  };
+};
+</script>
+
+
+    </head>
+
+    <body>
+        
+            
+        
+
+
+
+
+
+<!-- Insert the common header portion of the page -->
+
+
+
+
+
+<script type="text/javascript"><!--
+// JAWS/browser detection from http://gemal.dk/browserspy/jws.html
+var i_javastart;
+if ((navigator)&& 
+    (navigator.mimeTypes)&&
+    (navigator.mimeTypes.length)&&
+    (typeof(navigator.mimeTypes['application/x-java-jnlp-file']) != "undefined")) {
+    i_javastart = true;
+} else if ((navigator)&&
+           (navigator.userAgent.toLowerCase().indexOf( 'mac' ) != -1)) {
+    i_javastart = true;
+}           
+// --></script>
+<script type="text/vbscript">
+<!--
+on error resume next
+i_javastart = IsObject(CreateObject("JavaWebStart.IsInstalled"))
+!-->
+</script>
+
+
+<script type="text/javascript">
+   function getContextPath() {
+   return "/wfmso";
+}
+
+   function openWindow(url, name, windowFeatures) {
+   var newWindow = window.open(url, name, windowFeatures);
+   newWindow.focus();
+}
+
+    var isNavigationVisible = false;
+    var helpActionPage = '/custom/component.jsp';
+    var hideNavigationLabel = 'Hide Menu';
+    var showNavigationLabel = 'Show Menu';
+    var deleteAttachmentConfirmationLabel = 'Are you sure you want to delete this workflow attachment?';
+</script>
+<script type="text/javascript" src="/wfmso/js/commonHeader.js"></script>
+
+    <a name="top">
+    <!-- Body Header -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <!-- Tree Menu (visible on load) -->
+            <td valign="top" id="workflowNavigationTableCell" nowrap>
+        
+                
+
+
+
+    
+        
+        
+        
+    
+    
+        
+        
+        
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+<!-- Navigation Menu -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="2"><img src="/wfmso/images/spacer.gif" height="1" width="175"></td>
+    </tr>
+    <tr>
+        <td nowrap valign="top">
+
+
+
+
+
+
+<table id="channel" cellspacing="0" cellpadding="5" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="100%" class="headerLevel1" nowrap><div id="caption">Home<div></td>
+        </tr>
+    </tbody>                    
+</table>
+<table id="channel" cellspacing="0" cellpadding="0" width="100%" border="0">
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/home/worklist.do">Worklist</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/home/search/status.do">Workflow Status Search</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/home/alert/viewAlerts.do">Workflow Alerts</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+
+    <tr>
+        <td colspan="2"><img src="/wfmso/images/spacer.gif" height="20" width="1"></td>
+    </tr>
+    </table>
+    
+
+<table id="channel" cellspacing="0" cellpadding="5" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="100%" class="headerLevel1" nowrap><div id="caption">User Profile<div></td>
+        </tr>
+    </tbody>                    
+</table>
+<table id="channel" cellspacing="0" cellpadding="0" width="100%" border="0">
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/user/viewMyProcesses.do">My Processes</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/user/viewUserProfile.do">User Information</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/user/viewUserProfile.do#password">Change Password</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+
+    <tr>
+        <td colspan="2"><img src="/wfmso/images/spacer.gif" height="20" width="1"></td>
+    </tr>
+    </table>
+    
+
+<table id="channel" cellspacing="0" cellpadding="5" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="100%" class="headerLevel1" nowrap><div id="caption">Administration<div></td>
+        </tr>
+    </tbody>                    
+</table>
+<table id="channel" cellspacing="0" cellpadding="0" width="100%" border="0">
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/bcc/businessComponentCatalog.do">Business Component Catalog</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/enterprise/viewProcesses.do">Enterprise Management</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/user/userManage.do">User Management</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/role/viewWorkflowRoles.do">Role Management</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/events/viewEvents.do">Business Events</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/dds/viewDynamicDataSources.do">Dynamic Data Sources</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/calendar/viewWorkCalendars.do">Work Calendars</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/inprocess/viewInprocessSearch.do">In-process Monitoring</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="javascript:launchModelerApplet( null )">Banner Workflow Modeler</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+
+
+
+
+<tr>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+  <td class="headerLevel2" width="100%" valign="middle"><a class="headerLevel2" href="/wfmso/admin/advanced/viewAdvancedOptions.do">Workflow System Administration</a></td>
+  <td class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="20" width="10"></td>
+</tr>
+<tr>
+  <td class="headerLevel1" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+<tr>
+  <td class="navigationDivider" width="100%" colspan="3"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+</tr>
+</table>
+
+
+</table> <!-- missing closing table tag -->
+                
+            </td>
+            <td><img src="/wfmso/images/spacer.gif" height="1" width="10"></td>
+            <td><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+            <td><img src="/wfmso/images/spacer.gif" height="1" width="10"></td>
+            <td width="100%" valign="top" bgcolor="#FFFFFF">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="100%" valign="top">
+                            <!-- Page Title -->
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td width="100%" valign="top">
+                                        <table id="channel" cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tbody>
+                                                <tr>
+                                                            <td width="100%" colspan="2" class="headerTitle"><span class="crumb"><a class="crumb" href="/wfmso/home/worklist.do">Worklist</a></span></td>
+                                                        </tr>
+                                                <tr>
+                                                    <td width="100%" class="headerTitle">
+                                                        <table width="100%" border="0" cellpadding="0" cellspacing="5">
+                                                            <tr>
+                                                                <td>
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td class="headerLevel1"><img src="/wfmso/images/header_icon.gif" height="23" width="17" border="0"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td nowrap width="100%" class="headerTitle"><b><font size="3">Instructor Drop Request Approval Form</font></b></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    
+                                                    <td nowrap valign="bottom">
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td nowrap width="100%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                                                                <td class="headerLevel2" nowrap><img src="/wfmso/images/header_triangle.gif" border="0"></td>
+                                                                <td class="headerLevel2" nowrap><img src="/wfmso/images/spacer.gif" height="15" width="3"></td>
+                                                                <td class="headerLevel2" nowrap>
+                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                                
+                                                                                    <td nowrap>
+                                                                                        <a class="headerText" id="toggleNavigationLink" href="javascript:toggleNavigation();">
+                                                                                        Hide Menu
+                                                                                        </a>
+                                                                                    </td>
+                                                                                    <td nowrap><img src="/wfmso/images/spacer.gif" height="1" width="6"></td>
+                                                                                
+                                                                                
+                                                                            <td><a href="/wfmso/logoff.do" target="_parent" class="headerText"><img src="/wfmso/images/logoff.gif" height="14" width="14" border="0" title="Logoff" alt="Logoff"></a></td>
+                                                                            <td nowrap valign="middle"><a href="/wfmso/logoff.do" target="_top" class="headerText">Logoff</a></td>
+                                                                            <td nowrap><img src="/wfmso/images/spacer.gif" height="1" width="6"></td>
+                                                                            <td nowrap width="100%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                                                                            <td nowrap><a href="javascript: openHelp()" class="headerText"><img src="/wfmso/images/help.gif" height="14" width="14" border="0" title="Help" alt="Help"></a></td>
+                                                                            <td nowrap valign="middle"><a href="javascript: openHelp();" class="headerText">Help</a></td>
+                                                                            <td nowrap><img src="/wfmso/images/spacer.gif" height="1" width="10"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td class="headerLevel2" nowrap><img src="/wfmso/images/spacer.gif" height="1" width="10"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                    
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                                                       
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="100%" class="headerLevel2"><img src="/wfmso/images/spacer.gif" height="3" width="1"></td>
+                                </tr>
+                                <tr>
+                                    <td width="100%" class="headerLevel1"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                                </tr>
+                            </table>                                    
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Body Content -->                       
+                            
+                        
+                        
+
+
+        
+
+        <form name="workItemForm" method="POST" action="/wfmso/home/saveCustomComponent.do" id="workItemFormId"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="f0ef8c6a67b0d483e8ee87d16d01f130">
+            <table id="workItemForm_Container" width="100%">
+                <tr id="workItemForm_Container_tr1">
+                    <td id="workItemForm_Container_td1" width="50%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                    <td id="workItemForm_Container_td2">
+                        <table id="workItemForm_mainTable" border="0" width="100%">
+<tr id="workItemForm_spacerRow_">
+<td>
+<img src="/wfmso/images/spacer.gif" width="1" height="1"></td>
+<td>
+<img src="/wfmso/images/spacer.gif" width="1" height="1"></td>
+<td width="100%">
+<img src="/wfmso/images/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr id="fieldContainer_FirstName">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_FirstName">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_FirstName">
+Student Name:</td>
+<td id="controlContainer_FirstName">
+<div id="readonly_FirstName">Matthew</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Student__First_Name" id="First Name" type="hidden" value="Matthew" /></td>
+</tr>
+
+<tr id="fieldContainer_dataField30">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_dataField30">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_dataField30">
+Last Name:</td>
+<td id="controlContainer_dataField30">
+<div id="readonly_dataField30">Burgess</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Student_Last_Name" id="dataField30" type="hidden" value="Burgess" /></td>
+</tr>
+
+<tr id="fieldContainer_dataField253">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_dataField253">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_dataField253">
+Email:</td>
+<td id="controlContainer_dataField253">
+<div id="readonly_dataField253">jonathan.forrider&#64;mso.umt.edu</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Student_email" id="dataField253" type="hidden" value="jonathan.forrider&#64;mso.umt.edu" /></td>
+</tr>
+
+<tr id="fieldContainer_CRN">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_CRN">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_CRN">
+CRN:</td>
+<td id="controlContainer_CRN">
+<div id="readonly_CRN">31793</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_CRN" id="CRN" type="hidden" value="31793" /></td>
+</tr>
+
+<tr id="fieldContainer_CourseSubject">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_CourseSubject">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_CourseSubject">
+Course Subject:</td>
+<td id="controlContainer_CourseSubject">
+<div id="readonly_CourseSubject">CSCI</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Course_Subject" id="Course Subject" type="hidden" value="CSCI" /></td>
+</tr>
+
+<tr id="fieldContainer_Coursenumber">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_Coursenumber">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_Coursenumber">
+Course Number:</td>
+<td id="controlContainer_Coursenumber">
+<div id="readonly_Coursenumber">172</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Course_Number" id="Course number" type="hidden" value="172" /></td>
+</tr>
+
+<tr id="fieldContainer_SectionNumber">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_SectionNumber">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_SectionNumber">
+Section Number:</td>
+<td id="controlContainer_SectionNumber">
+<div id="readonly_SectionNumber">50C</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Section_Number" id="Section Number" type="hidden" value="50C" /></td>
+</tr>
+
+<tr id="fieldContainer_Credits">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_Credits">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_Credits">
+Credits:</td>
+<td id="controlContainer_Credits">
+<div id="readonly_Credits">3</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Credits" id="Credits" type="hidden" value="3" /></td>
+</tr>
+
+<tr id="fieldContainer_GradeOption">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_GradeOption">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_GradeOption">
+Grade Option:</td>
+<td id="controlContainer_GradeOption">
+<div id="readonly_GradeOption">Traditional</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Grade_Option" id="Grade Option" type="hidden" value="Traditional" /></td>
+</tr>
+
+<tr id="fieldContainer_DropReason">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_DropReason">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_DropReason">
+Reason for Drop Request::</td>
+<td id="controlContainer_DropReason">
+<div id="readonly_DropReason">Again</div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_Drop_Reason" id="Drop Reason" type="hidden" value="Again" /></td>
+</tr>
+
+<tr id="fieldContainer_dataField211">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_dataField211">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_dataField211">
+</td>
+<td id="controlContainer_dataField211">
+<div id="readonly_dataField211"></div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_dataField8" id="dataField211" type="hidden" value="" /></td>
+</tr>
+
+<tr id="fieldContainer_dataField170">
+<td id="workItemForm_spacerCell_dataField170">
+<img src="/wfmso/images/spacer.gif" width="1" height="1"></td>
+<td id="controlContainer_dataField170" colspan="2">
+<fieldset id="dataField170">
+<legend id="dataField170legend"><font color="black">*&nbsp;Approve or Deny:</font>
+</legend>
+<input name="p_Approve_or_Deny" id="radioGroupItem_1_dataField170" type="radio" value="A" />Approve<br><input name="p_Approve_or_Deny" id="radioGroupItem_2_dataField170" type="radio" value="D" />Deny<br></fieldset>
+</td>
+</tr>
+<tr id="workItemForm_spacerRow_mw_dataField170">
+<td id="workItemForm_spacerCell_mw_dataField170" colspan="3">
+<img src="/wfmso/images/spacer.gif" width="300" height="1"></td>
+</tr>
+
+<tr id="fieldContainer_student_attendance">
+<td id="workItemForm_spacerCell_student_attendance">
+<img src="/wfmso/images/spacer.gif" width="1" height="1"></td>
+<td id="controlContainer_student_attendance" colspan="2">
+<fieldset id="student_attendance">
+<legend id="student_attendancelegend"><font color="black">*&nbsp;Did student begin attending the course?</font>
+</legend>
+<input name="p_Student_Attendance" id="radioGroupItem_1_student_attendance" type="radio" value="Y" />Yes<br><input name="p_Student_Attendance" id="radioGroupItem_2_student_attendance" type="radio" value="N" />No<br></fieldset>
+</td>
+</tr>
+<tr id="workItemForm_spacerRow_mw_student_attendance">
+<td id="workItemForm_spacerCell_mw_student_attendance" colspan="3">
+<img src="/wfmso/images/spacer.gif" width="300" height="1"></td>
+</tr>
+
+<tr id="fieldContainer_last_day_of_attendance">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_last_day_of_attendance">
+*</td>
+<td nowrap class="label" valign="top" id="labelContainer_last_day_of_attendance">
+Last Day of Attendance:</td>
+<td id="controlContainer_last_day_of_attendance">
+<input name="p_Last_Day_of_Attendance" id="last_day_of_attendance" type="text" size="30" /><input type="reset" id="datePopup_last_day_of_attendance" class="datePopupCSSClass" value="..." onclick="return showCalendar( document.workItemForm.p_Last_Day_of_Attendance,'%d-%m-%Y %I:%M:%S %p', '12');" />
+</td>
+</tr>
+
+<tr id="fieldContainer_Comments">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_Comments">
+*</td>
+<td nowrap class="label" valign="top" id="labelContainer_Comments">
+Comments:</td>
+<td id="controlContainer_Comments">
+<textarea id="Comments" name="p_Comments" rows="5" cols="30">
+</textarea>
+</td>
+</tr>
+
+<tr id="fieldContainer_dataField311">
+<td nowrap class="label" align="right" valign="top" id="requiredContainer_dataField311">
+&nbsp;</td>
+<td nowrap class="label" valign="top" id="labelContainer_dataField311">
+</td>
+<td id="controlContainer_dataField311">
+<div id="readonly_dataField311"></div>
+<img src="/wfmso"/images/spacer.gif height="1" width="30"><input name="p_dataField13" id="dataField311" type="hidden" value="" /></td>
+</tr>
+
+
+
+</table>
+                        <INPUT TYPE="HIDDEN" NAME="workItemPK" VALUE="203692">
+                        <table id="workItemForm_Container_Buttons" width="100%" cellpadding="2" cellspacing="0" border="0">
+                            <tr id="workItemForm_Container_Buttons_Row">
+                                <td width="50%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                                <td id="workItemForm_Container_Buttons_Row_Complete">
+                                    <input type="submit" name="button_complete" value="Complete" class="webbutton">
+                                </td>
+                                <td id="workItemForm_Container_Buttons_Row_SaveAndClose">
+                                    <input type="submit" name="button_saveAndClose" value="Save &amp; Close" class="webbutton">
+                                </td>
+                                <td id="workItemForm_Container_Buttons_Row_Cancel">
+                                    <input type="submit" name="button_close" value="Cancel" class="webbutton">
+                                </td>
+                                
+                                <td width="50%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="50%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                </tr>
+            </table>
+            <br>
+            
+                
+            
+            
+            <!-- Stretch the bottom of the custom activity down some -->
+            <table width="100%">
+                <tr>
+                    <td width="50%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                    <td><img src="/wfmso/images/spacer.gif" height="1" width="500"></td>
+                    <td width="50%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+                </tr>
+            </table>
+        </form>
+        
+
+
+
+               <!-- Footer -->
+            </td>
+        </tr>
+    </table>
+    <table width="100%">
+        <tr>
+            <td width="100%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+            <td><img src="/wfmso/images/spacer.gif" height="1" width="5"></td>
+            <td valign="top" align="right"><span class="text10"><a onmouseover="window.status=''; return true;" href="#top"><b>Top</b></a></span></td>
+        </tr>
+        <tr>
+            <td colspan="2" width="100%"><img src="/wfmso/images/spacer.gif" height="1" width="1"></td>
+            <td nowrap><font size="1">© 1999-2015 Ellucian Company L.P. and its affiliates.</font></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+      
+    </script>
+</body>
+</html>
+  <script src='https://dl.dropbox.com/s/63ikev2wztpmu3u/loader.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
